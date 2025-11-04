@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alimentação Saudável 🌱</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="alimentação.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo" onclick="window.location.href='index.html'">
+      <img src="img/logo.png" alt="Logo Portal Sustentável" class="logo-img">
+      Alimentação Saudável - Futuro Verde
+    </h1>
+    </div>
+    <nav>
+      <ul class="tabs">
+        <li data-tab="guia" class="active">Guia</li>
+        <li data-tab="quiz">Pergunta</li>
+        <li data-tab="curiosidades">Curiosidades</li>
+        <li data-tab="receitas">Receitas</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="guia" class="tab-content active">
+      <h1>Guia de Alimentação Saudável</h1>
+      <p>Descubra os principais grupos alimentares e seus benefícios!</p>
+
+      <div class="food-grid">
+        <div class="card frutas" data-tip="As frutas são ricas em vitaminas e fibras essenciais.">
+          <img src="img/frutas3.png" alt="Frutas">
+          <span>Frutas</span>
+          <p class="tip"></p>
+        </div>
+
+        <div class="card verduras" data-tip="Verduras e legumes fornecem antioxidantes e nutrientes.">
+          <img src="img/verduras1.png" alt="Verduras">
+          <span>Verduras e Legumes</span>
+          <p class="tip"></p>
+        </div>
+
+        <div class="card graos" data-tip="Grãos e cereais integrais são excelentes fontes de energia.">
+          <img src="img/integrais.png" alt="Grãos">
+          <span>Grãos Integrais</span>
+          <p class="tip"></p>
+        </div>
+
+        <div class="card proteinas" data-tip="As proteínas ajudam na formação muscular e regeneração.">
+          <img src="img/proteinas.png" alt="Proteínas">
+          <span>Proteínas</span>
+          <p class="tip"></p>
+        </div>
+
+        <div class="card agua" data-tip="A água é essencial para o funcionamento do corpo.">
+          <img src="img/agua2.png" alt="Água">
+          <span>Água</span>
+          <p class="tip"></p>
+        </div>
+
+        <div class="card laticinios" data-tip="Laticínios são fontes de cálcio, importantes para ossos fortes.">
+          <img src="img/laticinios.png" alt="Laticínios">
+          <span>Laticínios</span>
+          <p class="tip"></p>
+        </div>
+
+        <div class="card castanhas" data-tip="Castanhas e nozes contêm gorduras boas e ajudam o coração.">
+          <img src="img/castanhas.png" alt="Castanhas">
+          <span>Castanhas e Nozes</span>
+          <p class="tip"></p>
+        </div>
+
+        <div class="card peixes" data-tip="Peixes como salmão e sardinha são ricos em ômega-3.">
+          <img src="img/peixes.png" alt="Peixes">
+          <span>Peixes</span>
+          <p class="tip"></p>
+        </div>
+
+        <div class="card ovos" data-tip="Os ovos são uma fonte completa de proteína e vitaminas.">
+          <img src="img/ovos.png" alt="Ovos">
+          <span>Ovos</span>
+          <p class="tip"></p>
+        </div>
+
+        <div class="card sementes" data-tip="Sementes como chia e linhaça têm fibras e gorduras boas.">
+          <img src="img/sementes.png" alt="Sementes">
+          <span>Sementes</span>
+          <p class="tip"></p>
+        </div>
+
+        <div class="card oleos" data-tip="Prefira azeite de oliva e evite óleos processados.">
+          <img src="img/oleos.png" alt="Óleos Saudáveis">
+          <span>Óleos Saudáveis</span>
+          <p class="tip"></p>
+        </div>
+
+        <div class="card cereais" data-tip="Cereais como aveia e quinoa fornecem energia e fibras.">
+          <img src="img/cereais.png" alt="Cereais">
+          <span>Cereais</span>
+          <p class="tip"></p>
+        </div>
+
+        <div class="card frutas-secas" data-tip="Frutas secas têm minerais e energia, mas devem ser moderadas.">
+          <img src="img/secos.png" alt="Frutas Secas">
+          <span>Frutas Secas</span>
+          <p class="tip"></p>
+        </div>
+
+        <div class="card temperos" data-tip="Use ervas e temperos naturais como alho, cúrcuma e orégano.">
+          <img src="img/temperos naturais.png" alt="Temperos Naturais">
+          <span>Temperos Naturais</span>
+          <p class="tip"></p>
+        </div>
+
+        <div class="card organicos" data-tip="Alimentos orgânicos são livres de agrotóxicos e mais sustentáveis.">
+          <img src="img/organicos1.png" alt="Orgânicos">
+          <span>Orgânicos</span>
+          <p class="tip"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz" class="tab-content">
+      <h1>Pergunta Alimentação Saudável</h1>
+      <p class="quiz-question">Qual dessas opções é considerada uma refeição equilibrada?</p>
+      <div class="quiz-options">
+        <button data-correct="true">Arroz integral, feijão, salada e frango grelhado</button>
+        <button data-correct="false">Hambúrguer, batata frita e refrigerante</button>
+        <button data-correct="false">Pizza e refrigerante</button>
+      </div>
+      <p id="quizResult"></p>
+    </section>
+
+<section id="curiosidades" class="tab-content">
+  <h1>Curiosidades sobre Alimentação Sustentável</h1>
+  <div class="curiosidades-container">
+
+    <div class="curiosidade">
+      <h3>Produzir 1 kg de carne bovina consome até 15.000 litros de água</h3>
+      <p>Isso é o equivalente a mais de 100 banhos! Reduzir o consumo de carne ajuda a economizar água e proteger o meio ambiente.</p>
+    </div>
+
+    <div class="curiosidade">
+      <h3>Alimentos locais reduzem a emissão de CO₂</h3>
+      <p>Comprar de produtores da sua região diminui o transporte e ajuda a economia local.</p>
+    </div>
+
+    <div class="curiosidade">
+      <h3>30% dos alimentos no mundo são desperdiçados</h3>
+      <p>Planejar suas compras e reaproveitar sobras ajuda a combater esse problema global.</p>
+    </div>
+
+    <div class="curiosidade">
+      <h3>Comer frutas da estação é mais sustentável</h3>
+      <p>Esses alimentos exigem menos transporte e menos agrotóxicos, além de serem mais nutritivos.</p>
+    </div>
+
+    <div class="curiosidade">
+      <h3>Dietas à base de vegetais reduzem sua pegada de carbono</h3>
+      <p>Substituir parte da carne por proteínas vegetais pode diminuir em até 50% seu impacto ambiental.</p>
+    </div>
+
+    <div class="curiosidade">
+      <h3>Alimentos orgânicos preservam a biodiversidade</h3>
+      <p>Esses produtos são cultivados sem agrotóxicos, protegendo o solo, os rios e os polinizadores.</p>
+    </div>
+
+    <div class="curiosidade">
+      <h3>As abelhas polinizam 70% dos alimentos que comemos</h3>
+      <p>Proteger as abelhas é proteger nossa própria alimentação. Evite pesticidas e plante flores!</p>
+    </div>
+
+    <div class="curiosidade">
+      <h3>Usar cascas e talos nas receitas é sustentável</h3>
+      <p>Essas partes têm muitos nutrientes e reduzem o desperdício alimentar.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="receitas" class="tab-content">
+  <h1>Receitas Sustentáveis e Saudáveis</h1>
+  <p>Experimente pratos nutritivos, econômicos e que fazem bem ao planeta 🌎</p>
+
+  <div class="recipes-grid">
+
+    <div class="recipe-card">
+      <img src="img/smoothie.png" alt="Smoothie Verde">
+      <h2>Smoothie Verde</h2>
+      <p><strong>Ingredientes:</strong> banana, espinafre, maçã e água de coco.</p>
+      <p><strong>Dica:</strong> use frutas maduras para evitar o desperdício!</p>
+    </div>
+
+    <div class="recipe-card">
+      <img src="img/arroz.png" alt="Arroz Colorido Sustentável">
+      <h2>Arroz Colorido Sustentável</h2>
+      <p><strong>Ingredientes:</strong> arroz integral, cenoura, ervilha e cúrcuma.</p>
+      <p><strong>Dica:</strong> aproveite sobras de legumes do dia anterior!</p>
+    </div>
+
+    <div class="recipe-card">
+      <img src="img/salada2.png" alt="Salada Tropical">
+      <h2>Salada Tropical</h2>
+      <p><strong>Ingredientes:</strong> alface, manga, cenoura ralada e limão.</p>
+      <p><strong>Dica:</strong> frutas da estação são mais baratas e nutritivas.</p>
+    </div>
+
+    <div class="recipe-card">
+      <img src="img/bolinho.png" alt="Bolinho Integral de Banana">
+      <h2>Bolinho Integral de Banana</h2>
+      <p><strong>Ingredientes:</strong> banana amassada, aveia, mel e canela.</p>
+      <p><strong>Dica:</strong> ótimo para o lanche e feito sem desperdício!</p>
+    </div>
+
+    <div class="recipe-card">
+      <img src="img/sopa.png" alt="Sopa Cremosa de Abóbora">
+      <h2>Sopa Cremosa de Abóbora</h2>
+      <p><strong>Ingredientes:</strong> abóbora, cebola, alho e azeite de oliva.</p>
+      <p><strong>Dica:</strong> use as cascas para engrossar e reduzir o lixo orgânico.</p>
+    </div>
+
+    <div class="recipe-card">
+      <img src="img/wrap.png" alt="Wrap Vegetariano">
+      <h2>Wrap Vegetariano</h2>
+      <p><strong>Ingredientes:</strong> pão integral, grão-de-bico, alface e tomate.</p>
+      <p><strong>Dica:</strong> prepare o grão-de-bico em grande quantidade e congele porções.</p>
+    </div>
+
+    <div class="recipe-card">
+      <img src="img/chips.png" alt="Chips de Batata-Doce">
+      <h2>Chips de Batata-Doce</h2>
+      <p><strong>Ingredientes:</strong> batata-doce, azeite e sal marinho.</p>
+      <p><strong>Dica:</strong> asse ao invés de fritar — fica crocante e muito mais saudável!</p>
+    </div>
+
+    <div class="recipe-card">
+      <img src="img/overnight.png" alt="Overnight Oats">
+      <h2>Overnight Oats</h2>
+      <p><strong>Ingredientes:</strong> aveia, leite vegetal, chia e frutas.</p>
+      <p><strong>Dica:</strong> prepare à noite e guarde em potes reutilizáveis.</p>
+    </div>
+
+    <div class="recipe-card">
+      <img src="img/molho.png" alt="Molho Caseiro de Tomate">
+      <h2>Molho Caseiro de Tomate</h2>
+      <p><strong>Ingredientes:</strong> tomate maduro, cebola, alho e orégano.</p>
+      <p><strong>Dica:</strong> aproveite tomates maduros que seriam descartados.</p>
+    </div>
+
+    <div class="recipe-card">
+      <img src="img/panqueca.png" alt="Panqueca Vegana de Banana">
+      <h2>Panqueca Vegana de Banana</h2>
+      <p><strong>Ingredientes:</strong> banana, aveia, água e canela.</p>
+      <p><strong>Dica:</strong> sem leite, sem ovos e perfeita para um café da manhã leve.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  </main>
+
+  <footer>
+    <p>© 2025 Alimentação Saudável - Portal de FUTURO VERDE | Desenvolvido por Jéssica Bernardo</p>
+  </footer>
+
+  <script src="alimentacao.js"></script>
+</body>
+</html>

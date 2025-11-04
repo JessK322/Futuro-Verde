@@ -1,0 +1,175 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', Arial, sans-serif; }
+body { background:#f0f9f4; color:#333; }
+.logo-link {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.logo-link:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+header {
+  background:#2e7d32;
+  color:white;
+  padding:15px 20px;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.logo { display:flex; align-items:center; font-size:1.5rem; font-weight:bold; }
+.logo-img { width:45px; margin-right:10px; }
+
+nav ul.tabs { list-style:none; display:flex; gap:20px; }
+nav ul.tabs li {
+  cursor:pointer;
+  font-weight:bold;
+  padding:8px 15px;
+  border-radius:12px;
+  transition:all 0.3s;
+}
+nav ul.tabs li.active {
+  background:white;
+  color:#2a7a4f;
+}
+
+main { padding:40px 20px; text-align:center; }
+.recycle-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap:1.5rem;
+  margin-top:25px;
+}
+
+.card {
+  padding:2rem;
+  border-radius:20px;
+  cursor:pointer;
+  font-size:1.2rem;
+  font-weight:bold;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(145deg, #ffffff, #e8f5e9);
+  box-shadow: 8px 8px 20px #c0c0c0, -8px -8px 20px #ffffff;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.05);
+  background:linear-gradient(145deg, #e0f7e5, #ffffff);
+  box-shadow: 4px 4px 15px #a0a0a0, -4px -4px 15px #ffffff;
+}
+
+.papel { background: #fff9c4; }
+.plastico { background: #b3e5fc; }
+.vidro { background: #c8e6c9; }
+.metal { background: #ffe0b2; }
+.organico { background: #dcedc8; }
+
+.tip-box {
+  background:linear-gradient(145deg, #c8e6c9, #e8f5e9);
+  margin:25px auto;
+  padding:1rem 1.5rem;
+  border-radius:15px;
+  font-weight:bold;
+  max-width:450px;
+  opacity:1;
+  transform:translateY(0);
+  transition: all 0.4s ease;
+}
+.tip-box.hidden { opacity:0; transform:translateY(-15px); pointer-events:none; }
+
+.tip-image {
+  max-width:300px;
+  margin:20px auto;
+  border-radius:15px;
+  display:block;
+  opacity:1;
+  transform:translateY(0);
+  transition: all 0.4s ease;
+}
+.tip-image.hidden {
+  opacity:0;
+  transform:translateY(-15px);
+  pointer-events:none;
+}
+
+.quiz-options button {
+  margin:8px;
+  padding:12px 20px;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:bold;
+  font-size:1rem;
+  background:linear-gradient(135deg,#b3e5fc,#81d4fa);
+  transition: all 0.3s;
+}
+.quiz-options button:hover { transform:scale(1.05); }
+.correct { background:linear-gradient(135deg,#a5d6a7,#81c784); color:white; }
+.wrong { background:linear-gradient(135deg,#ef9a9a,#e57373); color:white; }
+.quiz-image {
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+}
+.quiz-image.hidden {
+  opacity: 0;
+  transform: translateY(-15px);
+  pointer-events: none;
+}
+
+
+.tab-content { display:none; opacity:0; transition: all 0.5s ease; }
+.tab-content.active { display:block; opacity:1; }
+
+footer { text-align:center; padding:20px 0; margin-top:50px; background:#2e7d32; color:white; }
+
+#curiosidades ul { list-style: disc inside; margin-top:20px; text-align:left; max-width:500px; margin-left:auto; margin-right:auto; }
+
+.curiosity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.curiosity-card {
+  background: #f0fff4;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 4px 4px 10px #c0c0c0, -4px -4px 10px #ffffff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.curiosity-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 6px 6px 15px #b0b0b0, -6px -6px 15px #ffffff;
+}
+
+.curiosity-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.curiosity-card p {
+  font-size: 0.9rem;
+  line-height: 1.3;
+  color: #2a7a4f;
+  margin: 0;
+}

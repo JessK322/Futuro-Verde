@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energia Sustentável</title>
+  <link rel="stylesheet" href="energia.css">
+</head>
+<body>
+  <canvas id="energyParticles"></canvas>
+
+<header>
+  <nav class="navbar centered">
+    <h1 class="logo" onclick="window.location.href='index.html'">
+      <img src="img/logo.png" alt="Logo Portal Sustentável" class="logo-img">
+      Energia Sustentável - Futuro Verde
+    </h1>
+  </nav>
+</header>
+
+
+  <section class="content-section">
+    <h2>Energia Sustentável em Ação</h2>
+    <p>Descubra como a energia limpa transforma o mundo e aprenda brincando!</p>
+
+    <div class="video-container">
+      <iframe src="img/video2.mp4" title="Energia Sustentável" frameborder="0" allowfullscreen></iframe>
+      <iframe src="img/video1.mp4" title="Fontes Renováveis" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <h3>Curiosidades sobre Energia Renovável</h3>
+    <div class="curiosity-grid">
+      <div class="card">
+        <img src="img/solar.png" alt="Painel solar">
+        <p>A energia solar é a mais abundante do planeta e pode abastecer cidades inteiras.</p>
+      </div>
+      <div class="card">
+        <img src="img/eolica.png" alt="Energia eólica">
+        <p>O vento é uma das fontes mais limpas e baratas de energia do mundo.</p>
+      </div>
+      <div class="card">
+        <img src="img/hidreletrica.png" alt="Usina hidrelétrica">
+        <p>O Brasil é um dos maiores produtores de energia hidrelétrica do planeta.</p>
+      </div>
+      <div class="card">
+        <img src="img/biomassa.png" alt="Biomassa">
+        <p>A biomassa transforma resíduos orgânicos em energia renovável e sustentável.</p>
+      </div>
+            <div class="card">
+        <img src="img/moda.png" alt="Moda sustentável">
+        <p>Algumas marcas produzem roupas com tecidos feitos a partir de garrafas PET recicladas.</p>
+      </div>
+            <div class="card">
+        <img src="img/geotermica.png" alt="Energia Geotérmica">
+        <p>Aproveita o calor natural do interior da Terra para gerar eletricidade e aquecer sistemas de forma sustentável.</p>
+      </div>
+    </div>
+
+    <h3>Mini Quiz Sustentável</h3>
+    <div class="quiz-container">
+      <p id="question"></p>
+      <div id="options"></div>
+      <p id="quizResult"></p>
+    </div>
+
+    <button id="finishBtn" class="btn">Iniciar Quiz de Aprendizado!</button>
+    <p id="finalMsg" class="hidden">Parabéns! Você agora é um defensor da energia limpa!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Portal de Energia Renovável | Desenvolvido por Jéssica Bernardo</p>
+  </footer>
+
+  <script src="energia.js"></script>
+</body>
+</html>

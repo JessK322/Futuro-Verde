@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reciclagem Inteligente</title>
+  <link rel="stylesheet" href="reciclagem.css">
+</head>
+<body>
+  <header>
+  <div class="logo">
+    <a href="index.html" class="logo-link">
+      <img src="img/logo.png" alt="Logo" class="logo-img"> Reciclagem Inteligente
+    </a>
+  </div>
+
+    <nav>
+      <ul class="tabs">
+        <li data-tab="guia" class="active">Guia</li>
+        <li data-tab="quiz">Quiz</li>
+        <li data-tab="curiosidades">Curiosidades</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <section id="guia" class="tab-content active">
+    <h1>Guia Interativo de Reciclagem</h1>
+    <p>Clique em cada tipo de material para ver dicas de reciclagem!</p>
+
+    <div class="recycle-grid">
+      <div class="card papel" onclick="showTip('papel')">Papel</div>
+      <div class="card plastico" onclick="showTip('plastico')">Plástico</div>
+      <div class="card vidro" onclick="showTip('vidro')">Vidro</div>
+      <div class="card metal" onclick="showTip('metal')">Metal</div>
+      <div class="card organico" onclick="showTip('organico')">Orgânico</div>
+    </div>
+
+    <div id="tipBox" class="tip-box hidden"></div>
+    <img id="tipImage" class="tip-image hidden" src="" alt="Imagem do material">
+  </section>
+
+    <section id="quiz" class="tab-content">
+      <h1>Quiz de Reciclagem</h1>
+      <div id="quiz-container">
+        <p id="quiz-question">Pergunta será carregada aqui</p>
+        <div id="quiz-options" class="quiz-options"></div>
+        <p id="quizResult"></p>
+        <img id="quizImage" class="quiz-image hidden" src="" alt="Imagem de acerto">
+      </div>
+    </section>
+
+<section id="curiosidades" class="tab-content">
+  <h1>Curiosidades e Dicas</h1>
+  <div class="curiosity-grid">
+    <div class="curiosity-card">
+      <img src="img/compostagem.png" alt="Compostagem" class="curiosity-icon">
+      <p>Restos de comida podem virar adubo em poucas semanas, reduzindo lixo e gerando nutrientes para o solo.</p>
+    </div>
+    <div class="curiosity-card">
+      <img src="img/aluminio.png" alt="Alumínio" class="curiosity-icon">
+      <p>Reciclar alumínio economiza até 95% da energia necessária para produzir a partir do metal virgem.</p>
+    </div>
+    <div class="curiosity-card">
+      <img src="img/vidro2.png" alt="Vidro" class="curiosity-icon">
+      <p>Vidros podem ser reciclados infinitamente sem perder qualidade, reduzindo a extração de matéria-prima.</p>
+    </div>
+    <div class="curiosity-card">
+      <img src="img/plastico2.png" alt="Plástico PET" class="curiosity-icon">
+      <p>Plásticos PET podem ser transformados em novas garrafas, tecidos, carpetes e brinquedos, promovendo economia circular.</p>
+    </div>
+    <div class="curiosity-card">
+      <img src="img/energia.png" alt="Energia" class="curiosity-icon">
+      <p>Uma lata de alumínio reciclada economiza energia suficiente para manter uma lâmpada de 100W acesa por 4 horas.</p>
+    </div>
+    <div class="curiosity-card">
+      <img src="img/papel2.png" alt="Papel" class="curiosity-icon">
+      <p>Reciclar papel evita o corte de árvores, conserva água e reduz emissões de gases do efeito estufa.</p>
+    </div>
+    <div class="curiosity-card">
+      <img src="img/lixo organico.png" alt="Compostagem" class="curiosity-icon">
+      <p>Compostagem de restos orgânicos diminui o lixo em aterros e gera fertilizante natural para plantas.</p>
+    </div>
+    <div class="curiosity-card">
+      <img src="img/agua.png" alt="Água" class="curiosity-icon">
+      <p>Reciclar vidro e metais ajuda a economizar água e recursos minerais essenciais.</p>
+    </div>
+    <div class="curiosity-card">
+      <img src="img/planeta.png" alt="Planeta" class="curiosity-icon">
+      <p>Reduzir o consumo e reutilizar produtos prolonga sua vida útil e diminui a demanda por novos recursos.</p>
+    </div>
+    <div class="curiosity-card">
+      <img src="img/embalagem.png" alt="Embalagens" class="curiosity-icon">
+      <p>Embalagens recicladas reduzem o volume de resíduos sólidos e diminuem a poluição em rios e oceanos.</p>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <canvas id="particles"></canvas>
+  <footer>
+    <p>© 2025 Reciclagem Inteligente - Portal FUTURO VERDE | Desenvolvido por Jéssica Bernardo</p>
+  </footer>
+
+  <script src="reciclagem.js"></script>
+</body>
+</html>

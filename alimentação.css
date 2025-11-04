@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f5fdf5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #4CAF50;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.logo-img {
+  width: 40px;
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tabs li {
+  cursor: pointer;
+  padding: 8px 15px;
+  border-radius: 6px;
+  background: white;
+  color: #4CAF50;
+  transition: 0.3s;
+}
+
+.tabs li.active,
+.tabs li:hover {
+  background: #388E3C;
+  color: white;
+}
+
+main {
+  flex: 1;
+  padding: 30px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.card .tip {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #333;
+  display: none;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.card .tip.show {
+  display: block;
+}
+
+.frutas { background: #ffe0b2; }
+.verduras { background: #c8e6c9; }
+.graos { background: #fff9c4; }
+.proteinas { background: #bbdefb; }
+.agua { background: #d1c4e9; }
+
+footer {
+  background: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.quiz-options {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.quiz-options button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #c8e6c9;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.quiz-options button:hover {
+  transform: scale(1.05);
+  background: #a5d6a7;
+}
+
+#quizResult {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  header { flex-direction: column; align-items: flex-start; }
+  .tabs { justify-content: center; width: 100%; }
+}
+.laticinios { background: #e1f5fe; }
+.castanhas { background: #ffe0b2; }
+.peixes { background: #b2ebf2; }
+.ovos { background: #f8bbd0; }
+.sementes { background: #dcedc8; }
+.oleos { background: #ffecb3; }
+.cereais { background: #f0f4c3; }
+.frutas-secas { background: #d1c4e9; }
+.temperos { background: #c5cae9; }
+.organicos { background: #c8e6c9; }
+
+.curiosidades-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.curiosidade {
+  background: linear-gradient(135deg, #d7f7d0, #baf0c0);
+  border-left: 6px solid #3aa655;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.curiosidade:hover {
+  background: linear-gradient(135deg, #c8f3be, #a8e5b2);
+  transform: translateY(-3px);
+}
+
+.curiosidade h3 {
+  font-size: 1.1rem;
+  color: #2e7d32;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.curiosidade p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.curiosidade.active p {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* --- RECEITAS --- */
+/* --- RECEITAS COM IMAGEM --- */
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1100px;
+  padding: 1rem;
+}
+
+.recipe-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.4s ease;
+  border-left: 6px solid #81c784;
+}
+
+.recipe-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-bottom: 4px solid #a5d6a7;
+}
+
+.recipe-card h2 {
+  color: #2e7d32;
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.recipe-card p {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0.4rem 0.8rem;
+}
+
+.recipe-card strong {
+  color: #558b2f;
+}
+
+@media (max-width: 600px) {
+  .recipe-card img {
+    height: 140px;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  transition: transform 0.4s ease, text-shadow 0.4s ease;
+  animation: energyGlow 3s infinite ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-img {
+  width: 50px;
+  margin-right: 12px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.logo:hover .logo-img {
+  transform: rotate(-5deg) scale(1.1);
+}
